@@ -9,7 +9,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 /**
- *
+ * 
  * @author Blue
  */
 public class DeletionThread implements Runnable{
@@ -19,7 +19,7 @@ public class DeletionThread implements Runnable{
     public DeletionThread(ArrayList<File> arrFiles){
         this.arrFiles=arrFiles;
         t=net.sf.bluex.threads.UninterruptableThread.getMyThread(this, "Virus Deletion Thread");
-        t.start();
+        t.start();//
     }
     
     public void run(){
