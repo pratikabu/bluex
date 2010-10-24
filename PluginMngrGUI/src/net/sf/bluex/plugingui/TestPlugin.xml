@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Document    : TestPlugin.xml
+Last Updated: Wed Sep 23 23:26:21 IST 2009
+Author      : BlueX- Plugin API
+-->
+<plugin>
+<!--general information about the plugin-->
+    <name>TestPlugin</name>
+    <size>0</size>
+    <author>Pratik</author>
+    <release-date>Sep 23, 2009</release-date>
+    <version>2.1.4</version>
+    <jar-file-name>jasperreports-3.5.3.jar</jar-file-name>
+    <plugin-class>null</plugin-class>
+    <help-available>true</help-available>
+    <plugin-description>null</plugin-description>
+    <changes>
+        <entry>chagne1</entry>
+        <entry>change2</entry>
+    </changes>
+    <minimum-base-window-version>9.0.0</minimum-base-window-version>
+    <dependency>
+        <dependency-jar-file-name>Dep1</dependency-jar-file-name>
+        <minimum-dependency-version>5.6.4</minimum-dependency-version>
+    </dependency>
+    <dependency>
+        <dependency-jar-file-name>dep2</dependency-jar-file-name>
+        <minimum-dependency-version>8.7.0</minimum-dependency-version>
+    </dependency>
+    <other-entry>
+        <plugin-name>Explorer</plugin-name>
+        <menu>
+            <location>Context Menu</location>
+            <text>Pasdf</text>
+            <event-class>null</event-class>
+            <location>Tool Menu</location>
+            <text>sfas</text>
+            <event-class>null</event-class>
+        </menu>
+    </other-entry>
+    <other-entry>
+        <plugin-name>Plugin2</plugin-name>
+        <menu>
+            <location>Context Menu</location>
+            <text>asdf</text>
+            <event-class>null</event-class>
+            <location>Context Menu</location>
+            <text>asfsd</text>
+            <event-class>null</event-class>
+        </menu>
+    </other-entry>
+    <module-installed>
+        <mi-type>2</mi-type>
+    </module-installed>
+    <module-installed>
+        <mi-type>1</mi-type>
+    </module-installed>
+    <module-installed>
+        <mi-type>0</mi-type>
+        <mapping-extension>exe</mapping-extension>
+        <mapping-extension>pdf</mapping-extension>
+        <mapping-extension>pri</mapping-extension>
+        <mapping-extension>plugin</mapping-extension>
+    </module-installed>
+</plugin>
