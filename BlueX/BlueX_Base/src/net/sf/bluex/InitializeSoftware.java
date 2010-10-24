@@ -9,7 +9,6 @@ import java.io.File;
 import java.io.IOException;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
-import net.sf.bluex.boundary.PluginManager;
 import net.sf.bluex.components.BlueXStatics;
 import net.sf.bluex.components.Updater;
 import net.sf.bluex.exceptionManager.ErrorIcon;
@@ -111,9 +110,10 @@ public class InitializeSoftware{
         try {
             // Set System L&F
             UIManager.setLookAndFeel(BlueXStatics.prop.getProperty("laf"));
-        }
-        catch (Exception e) {
-           // handle exception
+        } catch (Exception e) {
+            try {
+               UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            } catch(Exception e1){}
         }
     }
 
