@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : Plugins.xml
+    Created on : August 7, 2009, 12:47 AM
+    Author     : Blue
+    Description:
+        This is the Metadata File for all the plugins available for BlueX
+-->
+
+<all-plugins>
+    <plugin>
+        <!--general information about the plugin-->
+        <name>OnlineExam</name>
+        <size>342342</size>
+        <author>name of the author of the plugin or the name of the owner if plugin is 3rd party</author>
+        <release-date>date of the release of the plugin</release-date>
+        <version>3.5.0</version>
+        <jar-file-name>OnlineExamJar.jar</jar-file-name>
+
+        <!--so simple as it. just give the Plugin interface implementing class name
+        every thing will be opened using this class's methods-->
+        <plugin-class>Fully qualified class name of the class implementing the Plugin interface</plugin-class>
+
+        <!--the help file will be in the folder hierarchy with the folder name equals to the plugin name
+        and also it will be available in the local system in the help folder only-->
+        <help-available>true</help-available>
+
+        <!--the description to be showed while updating or installing-->
+        <plugin-description>
+            the description of the plugin will be available here
+        </plugin-description>
+
+        <!--all the new changes should be written here-->
+        <changes>
+            <!--repeat the entry for every change-->
+            <entry>1st update</entry>
+            <entry>2nd update</entry>
+            <!--must maintain a change history file for every plugin... on a fixed location at server-->
+        </changes>
+
+        <!--the minimum base window version required by this plugin-->
+        <minimum-base-window-version>3.5.0</minimum-base-window-version>
+
+        <!-- Plugin dependency entries could be 0 or more -->
+        <dependency>
+            <dependency-jar-file-name>Jar File Name</dependency-jar-file-name>
+            
+            <!--this is needed to be checked for every install-->
+            <minimum-dependency-version>3.0.0</minimum-dependency-version>
+        </dependency>
+
+        <!--these enteries contains the dynamic enteries affected by this plugin of other plugins-->
+        <other-entry>
+            <!--the name of the plugin where the things are to be generated dynamically-->
+            <plugin-name>Explorer</plugin-name>
+            <!-- Context Menu entry could be 0 or more -->
+            <menu>
+                <location>Context Menu</location>
+                <text>Label of the Event</text>
+                <event-class>Fully Qualified Name of Class implementing the MenuEvent Interface</event-class>
+            </menu>
+        </other-entry>
+
+        <!-- Plugin tasks atleast 1 -->
+        <module-installed>
+            <mi-type>1</mi-type>
+
+            <!--if the plugin is of type File-Type-Association then multiple enteries of this attribute must be present-->
+            <mapping-extension>file extension to be mapped with this module eg: jpg</mapping-extension>
+        </module-installed>
+    </plugin>
+    <plugin>
+        <!--general information about the plugin-->
+        <name>Notepad++</name>
+        <size>342342</size>
+        <author>name of the author of the plugin or the name of the owner if plugin is 3rd party</author>
+        <release-date>date of the release of the plugin</release-date>
+        <version>3.2.0</version>
+        <jar-file-name>the name of the plugin's jar file</jar-file-name>
+
+        <!--so simple as it. just give the Plugin interface implementing class name
+        every thing will be opened using this class's methods-->
+        <plugin-class>Fully qualified class name of the class implementing the Plugin interface</plugin-class>
+
+        <!--the help file will be in the folder hierarchy with the folder name equals to the plugin name
+        and also it will be available in the local system in the help folder only-->
+        <help-available>true</help-available>
+
+        <!--the description to be showed while updating or installing-->
+        <plugin-description>
+            the description of the plugin will be available here
+        </plugin-description>
+
+        <!--all the new changes should be written here-->
+        <changes>
+            <!--repeat the entry for every change-->
+            <entry>1st update</entry>
+            <entry>2nd update</entry>
+            <!--must maintain a change history file for every plugin... on a fixed location at server-->
+        </changes>
+
+        <!--the minimum base window version required by this plugin-->
+        <minimum-base-window-version>3.5.0</minimum-base-window-version>
+
+        <!-- Plugin dependency entries could be 0 or more -->
+        <dependency>
+            <dependency-jar-file-name>Jar File Name</dependency-jar-file-name>
+            
+            <!--this is needed to be checked for every install-->
+            <minimum-dependency-version>3.0.0</minimum-dependency-version>
+        </dependency>
+
+        <!--these enteries contains the dynamic enteries affected by this plugin of other plugins-->
+        <other-entry>
+            <!--the name of the plugin where the things are to be generated dynamically-->
+            <plugin-name>Explorer</plugin-name>
+            <!-- Context Menu entry could be 0 or more -->
+            <menu>
+                <location>Context Menu</location>
+                <text>Label of the Event</text>
+                <event-class>Fully Qualified Name of Class implementing the MenuEvent Interface</event-class>
+            </menu>
+        </other-entry>
+
+        <!-- Plugin tasks atleast 1 -->
+        <module-installed>
+            <mi-type>1</mi-type>
+
+            <!--if the plugin is of type File-Type-Association then multiple enteries of this attribute must be present-->
+            <mapping-extension>file extension to be mapped with this module eg: jpg</mapping-extension>
+        </module-installed>
+    </plugin>
+<plugin>
+<!--general information about the plugin-->
+<name>Initializer</name>
+<size>345</size>
+<author>Blue</author>
+<release-date>Oct 3, 2009</release-date>
+<version>9.9.9</version>
+<jar-file-name>BlueXInitializer.jar</jar-file-name>
+<plugin-class>net.sf.bluexinit3.Plugin</plugin-class>
+<help-available>true</help-available>
+<plugin-description>Testing Plugin for BlueX 4.0.0</plugin-description>
+<changes>
+<entry>Nothing New</entry>
+</changes>
+<minimum-base-window-version>4.0.0</minimum-base-window-version>
+<dependency>
+<dependency-jar-file-name>jfm.jar</dependency-jar-file-name>
+<minimum-dependency-version>1.0.9</minimum-dependency-version>
+</dependency>
+<module-installed>
+<mi-type>1</mi-type>
+</module-installed>
+        <module-installed>
+            <mi-type>0</mi-type>
+
+            <!--if the plugin is of type File-Type-Association then multiple enteries of this attribute must be present-->
+            <mapping-extension>jpg</mapping-extension>
+            <mapping-extension>pif</mapping-extension>
+            <mapping-extension>exe</mapping-extension>
+        </module-installed>
+</plugin>
+</all-plugins>

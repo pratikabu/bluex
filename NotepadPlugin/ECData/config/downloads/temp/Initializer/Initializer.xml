@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+<!--general information about the plugin-->
+<name>Initializer</name>
+<size>345</size>
+<author>Blue</author>
+<release-date>Oct 3, 2009</release-date>
+<version>18.975.11</version>
+<jar-file-name>BlueXInitializer.jar</jar-file-name>
+<plugin-class>net.sf.bluexinit3.Plugin</plugin-class>
+<help-available>true</help-available>
+<plugin-description>Testing Plugin for BlueX 4.0.0</plugin-description>
+<changes>
+<entry>Nothing New</entry>
+</changes>
+<minimum-base-window-version>4.0.0</minimum-base-window-version>
+<dependency>
+<dependency-jar-file-name>jfm.jar</dependency-jar-file-name>
+<minimum-dependency-version>1.0.9</minimum-dependency-version>
+</dependency>
+<module-installed>
+<mi-type>1</mi-type>
+</module-installed>
+        <module-installed>
+            <mi-type>0</mi-type>
+
+            <!--if the plugin is of type File-Type-Association then multiple enteries of this attribute must be present-->
+            <mapping-extension>jpg</mapping-extension>
+            <mapping-extension>pif</mapping-extension>
+            <mapping-extension>exe</mapping-extension>
+        </module-installed>
+</plugin>

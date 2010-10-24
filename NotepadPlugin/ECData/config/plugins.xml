@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Document    : plugins.xml
+Last Updated: Mon Oct 05 00:06:26 IST 2009
+Author      : BlueX- Plugin API
+-->
+<BlueX>
+<plugin>
+<!--general information about the plugin-->
+<name>Notepad</name>
+<size>0</size>
+<author>Blue</author>
+<release-date>Sep 30, 2009</release-date>
+<version>3.0.2</version>
+<jar-file-name>NotepadPlugin.jar</jar-file-name>
+<plugin-class>com.gmail.pratikabu.notepad.boundary.Plugin</plugin-class>
+<help-available>true</help-available>
+<plugin-description>This plugin provides the basic functionality of a notepad. It has a memory efficient opening algorithm. It is a required plugin for the BlueX.</plugin-description>
+<changes>
+<entry>Changed the way it saves the data.</entry>
+</changes>
+<minimum-base-window-version>4.0.0</minimum-base-window-version>
+<module-installed>
+<mi-type>1</mi-type>
+</module-installed>
+<module-installed>
+<mi-type>0</mi-type>
+<mapping-extension>exe</mapping-extension>
+<mapping-extension>com</mapping-extension>
+<mapping-extension>bat</mapping-extension>
+<mapping-extension>pif</mapping-extension>
+<mapping-extension>scr</mapping-extension>
+<mapping-extension>lnk</mapping-extension>
+</module-installed>
+</plugin>
+</BlueX>
