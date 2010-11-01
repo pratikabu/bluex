@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Document   : RiskedFileOpener.xml
+Created On : Tue Oct 06 15:09:41 IST 2009
+Author     : BlueX- Plugin API
+-->
+<plugin>
+<!--general information about the plugin-->
+<name>Risk File Opener</name>
+<size>11839</size>
+<author>Eighty_Coffee</author>
+<release-date>Oct 6, 2009</release-date>
+<version>1.0.0</version>
+<jar-file-name>RiskedFileOpener.jar</jar-file-name>
+<plugin-class>net.sf.bluex.rfo.boundary.Plugin</plugin-class>
+<help-available>false</help-available>
+<plugin-description>This plugin is required to open all files with extensions that may lead to virus attack. This plugin opens those files and prompt user whether he/she wants the file to run from OS or not.</plugin-description>
+<changes>
+</changes>
+<minimum-base-window-version>4.0.0</minimum-base-window-version>
+<module-installed>
+<mi-type>0</mi-type>
+<mapping-extension>exe</mapping-extension>
+<mapping-extension>com</mapping-extension>
+<mapping-extension>bat</mapping-extension>
+<mapping-extension>pif</mapping-extension>
+<mapping-extension>scr</mapping-extension>
+<mapping-extension>lnk</mapping-extension>
+<mapping-extension>sh</mapping-extension>
+</module-installed>
+</plugin>

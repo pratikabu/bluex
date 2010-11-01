@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log>
+<exception>
+<time>dummy</time>
+<detail><stack-trace>FileSystemView.getShellFolder: f=ECData\help\Notepad</stack-trace>
+</detail></exception>
+<exception>
+<time>Tue Oct 06 15:18:47 IST 2009</time>
+<message>java.io.FileNotFoundException</message>
+<detail>
+<stack-trace>	at sun.awt.shell.ShellFolder.getShellFolder(ShellFolder.java:207)</stack-trace>
+<stack-trace>	at javax.swing.filechooser.FileSystemView.getShellFolder(FileSystemView.java:507)</stack-trace>
+<stack-trace>	at javax.swing.filechooser.FileSystemView.getSystemIcon(FileSystemView.java:202)</stack-trace>
+<stack-trace>	at net.sf.bluex.components.BlueXStatics.getIcon(BlueXStatics.java:103)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.DeleteFrame.getTableRow(DeleteFrame.java:547)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.DeleteFrame.fillTable(DeleteFrame.java:495)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.DeleteFrame.&lt;init&gt;(DeleteFrame.java:79)</stack-trace>
+<stack-trace>	at net.sf.bluex.controller.UsefulMethods.installPlugin(UsefulMethods.java:508)</stack-trace>
+<stack-trace>	at net.sf.bluex.controller.UsefulMethods.installNewPlugin(UsefulMethods.java:533)</stack-trace>
+<stack-trace>	at net.sf.bluex.boundary.PluginManager.installAlgo(PluginManager.java:640)</stack-trace>
+<stack-trace>	at net.sf.bluex.boundary.PluginManager.run(PluginManager.java:611)</stack-trace>
+<stack-trace>	at java.lang.Thread.run(Thread.java:619)</stack-trace>
+<stack-trace>FileSystemView.getShellFolder: f=ECData\help\Notepad</stack-trace>
+</detail></exception>
+<exception>
+<time>Tue Oct 06 15:18:47 IST 2009</time>
+<message>java.io.FileNotFoundException</message>
+<detail>
+<stack-trace>	at sun.awt.shell.ShellFolder.getShellFolder(ShellFolder.java:207)</stack-trace>
+<stack-trace>	at javax.swing.filechooser.FileSystemView.getShellFolder(FileSystemView.java:507)</stack-trace>
+<stack-trace>	at javax.swing.filechooser.WindowsFileSystemView.getSystemTypeDescription(FileSystemView.java:661)</stack-trace>
+<stack-trace>	at net.sf.bluex.components.BlueXStatics.getFileDescription(BlueXStatics.java:140)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.DeleteFrame.getTableRow(DeleteFrame.java:556)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.DeleteFrame.fillTable(DeleteFrame.java:495)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.DeleteFrame.&lt;init&gt;(DeleteFrame.java:79)</stack-trace>
+<stack-trace>	at net.sf.bluex.controller.UsefulMethods.installPlugin(UsefulMethods.java:508)</stack-trace>
+<stack-trace>	at net.sf.bluex.controller.UsefulMethods.installNewPlugin(UsefulMethods.java:533)</stack-trace>
+<stack-trace>	at net.sf.bluex.boundary.PluginManager.installAlgo(PluginManager.java:640)</stack-trace>
+<stack-trace>	at net.sf.bluex.boundary.PluginManager.run(PluginManager.java:611)</stack-trace>
+<stack-trace>	at java.lang.Thread.run(Thread.java:619)</stack-trace>
+<stack-trace>FileSystemView.getShellFolder: f=ECData\config\downloads\temp\Notepad\help\Notepad</stack-trace>
+</detail></exception>
+<exception>
+<time>Tue Oct 06 15:18:47 IST 2009</time>
+<message>java.io.FileNotFoundException</message>
+<detail>
+<stack-trace>	at sun.awt.shell.ShellFolder.getShellFolder(ShellFolder.java:207)</stack-trace>
+<stack-trace>	at javax.swing.filechooser.FileSystemView.getShellFolder(FileSystemView.java:507)</stack-trace>
+<stack-trace>	at javax.swing.filechooser.FileSystemView.getSystemIcon(FileSystemView.java:202)</stack-trace>
+<stack-trace>	at net.sf.bluex.components.BlueXStatics.getIcon(BlueXStatics.java:103)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.CopyFrame.getTableRow(CopyFrame.java:652)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.CopyFrame.fillTable(CopyFrame.java:591)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.CopyFrame.&lt;init&gt;(CopyFrame.java:100)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.CopyFrame.showCopyProgressDialog(CopyFrame.java:732)</stack-trace>
+<stack-trace>	at net.sf.bluex.controller.UsefulMethods.installPlugin(UsefulMethods.java:514)</stack-trace>
+<stack-trace>	at net.sf.bluex.controller.UsefulMethods.installNewPlugin(UsefulMethods.java:533)</stack-trace>
+<stack-trace>	at net.sf.bluex.boundary.PluginManager.installAlgo(PluginManager.java:640)</stack-trace>
+<stack-trace>	at net.sf.bluex.boundary.PluginManager.run(PluginManager.java:611)</stack-trace>
+<stack-trace>	at java.lang.Thread.run(Thread.java:619)</stack-trace>
+<stack-trace>FileSystemView.getShellFolder: f=ECData\config\downloads\temp\Notepad\help\Notepad</stack-trace>
+</detail></exception>
+<exception>
+<time>Tue Oct 06 15:18:47 IST 2009</time>
+<message>java.io.FileNotFoundException</message>
+<detail>
+<stack-trace>	at sun.awt.shell.ShellFolder.getShellFolder(ShellFolder.java:207)</stack-trace>
+<stack-trace>	at javax.swing.filechooser.FileSystemView.getShellFolder(FileSystemView.java:507)</stack-trace>
+<stack-trace>	at javax.swing.filechooser.WindowsFileSystemView.getSystemTypeDescription(FileSystemView.java:661)</stack-trace>
+<stack-trace>	at net.sf.bluex.components.BlueXStatics.getFileDescription(BlueXStatics.java:140)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.CopyFrame.getTableRow(CopyFrame.java:661)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.CopyFrame.fillTable(CopyFrame.java:591)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.CopyFrame.&lt;init&gt;(CopyFrame.java:100)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.CopyFrame.showCopyProgressDialog(CopyFrame.java:732)</stack-trace>
+<stack-trace>	at net.sf.bluex.controller.UsefulMethods.installPlugin(UsefulMethods.java:514)</stack-trace>
+<stack-trace>	at net.sf.bluex.controller.UsefulMethods.installNewPlugin(UsefulMethods.java:533)</stack-trace>
+<stack-trace>	at net.sf.bluex.boundary.PluginManager.installAlgo(PluginManager.java:640)</stack-trace>
+<stack-trace>	at net.sf.bluex.boundary.PluginManager.run(PluginManager.java:611)</stack-trace>
+<stack-trace>	at java.lang.Thread.run(Thread.java:619)</stack-trace>
+</detail></exception>
+<exception>
+<time>Tue Oct 06 15:30:14 IST 2009</time>
+<message>java.lang.ClassNotFoundException: com.gmail.pratikabu.notepad.boundary.Plugin</message>
+<detail>
+<stack-trace>	at java.net.URLClassLoader$1.run(URLClassLoader.java:200)</stack-trace>
+<stack-trace>	at java.security.AccessController.doPrivileged(Native Method)</stack-trace>
+<stack-trace>	at java.net.URLClassLoader.findClass(URLClassLoader.java:188)</stack-trace>
+<stack-trace>	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)</stack-trace>
+<stack-trace>	at java.lang.ClassLoader.loadClass(ClassLoader.java:251)</stack-trace>
+<stack-trace>	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:319)</stack-trace>
+<stack-trace>	at java.lang.Class.forName0(Native Method)</stack-trace>
+<stack-trace>	at java.lang.Class.forName(Class.java:247)</stack-trace>
+<stack-trace>	at net.sf.bluex.controller.UsefulMethods.getSelectedPlugin(UsefulMethods.java:234)</stack-trace>
+<stack-trace>	at net.sf.bluex.controller.UsefulMethods.openAssociatedFile(UsefulMethods.java:209)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.components.AbstractViewer.open(AbstractViewer.java:207)</stack-trace>
+<stack-trace>	at net.sf.bluex.explorer.boundary.DetailedView.mouseClicked(DetailedView.java:201)</stack-trace>
+<stack-trace>	at java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:253)</stack-trace>
+<stack-trace>	at java.awt.Component.processMouseEvent(Component.java:6041)</stack-trace>
+<stack-trace>	at javax.swing.JComponent.processMouseEvent(JComponent.java:3260)</stack-trace>
+<stack-trace>	at java.awt.Component.processEvent(Component.java:5803)</stack-trace>
+<stack-trace>	at java.awt.Container.processEvent(Container.java:2058)</stack-trace>
+<stack-trace>	at java.awt.Component.dispatchEventImpl(Component.java:4410)</stack-trace>
+<stack-trace>	at java.awt.Container.dispatchEventImpl(Container.java:2116)</stack-trace>
+<stack-trace>	at java.awt.Component.dispatchEvent(Component.java:4240)</stack-trace>
+<stack-trace>	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4322)</stack-trace>
+<stack-trace>	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:3995)</stack-trace>
+<stack-trace>	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:3916)</stack-trace>
+<stack-trace>	at java.awt.Container.dispatchEventImpl(Container.java:2102)</stack-trace>
+<stack-trace>	at java.awt.Window.dispatchEventImpl(Window.java:2429)</stack-trace>
+<stack-trace>	at java.awt.Component.dispatchEvent(Component.java:4240)</stack-trace>
+<stack-trace>	at java.awt.EventQueue.dispatchEvent(EventQueue.java:599)</stack-trace>
+<stack-trace>	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:273)</stack-trace>
+<stack-trace>	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:183)</stack-trace>
+<stack-trace>	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:173)</stack-trace>
+<stack-trace>	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:168)</stack-trace>
+<stack-trace>	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:160)</stack-trace>
+<stack-trace>	at java.awt.EventDispatchThread.run(EventDispatchThread.java:121)</stack-trace>

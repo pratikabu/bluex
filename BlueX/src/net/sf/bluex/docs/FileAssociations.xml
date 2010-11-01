@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : FileAssociations.xml
+    Created on : September 23, 2009, 9:24 PM
+    Author     : Blue
+    Description:
+        Purpose of the document follows.
+-->
+
+<file-association>
+    <association>
+        <plugin-name>PluginName</plugin-name>
+        <extension>exe</extension>
+        <default>true/false</default>
+    </association>
+</file-association>

@@ -1,0 +1,242 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  EXCEPTION_GUARD_PAGE (0x80000001) at pc=0x7c812adb, pid=216, tid=3348
+#
+# Java VM: Java HotSpot(TM) Client VM (1.6.0-b105 mixed mode, sharing)
+# Problematic frame:
+# C  [kernel32.dll+0x12adb]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x031a4800):  JavaThread "AWT-EventQueue-0" [_thread_in_native, id=3348]
+
+siginfo: ExceptionCode=0x80000001
+
+Registers:
+EAX=0x032bed6c, EBX=0x4728d550, ECX=0x4728d5c0, EDX=0x00000033
+ESP=0x032bed68, EBP=0x032bedbc, ESI=0x00000000, EDI=0x00000000
+EIP=0x7c812adb, EFLAGS=0x00000246
+
+Top of Stack: (sp=0x032bed68)
+0x032bed68:   040327e0 80000001 00000001 00000000
+0x032bed78:   7c812adb 00000000 00000000 00000050
+0x032bed88:   00000004 7c9c5238 00145150 032beddc
+0x032bed98:   7c90e900 7c910040 00000000 7c9c520c
+0x032beda8:   032bf2fc 032bf2fc 00000000 00000000
+0x032bedb8:   000a30b8 032bee08 4728ab1c 80000001
+0x032bedc8:   00000001 00000000 00000000 4728dbc4
+0x032bedd8:   4728d550 040327f0 00000000 040327e0 
+
+Instructions: (pc=0x7c812adb)
+0x7c812acb:   8d 7d c4 f3 a5 5f 8d 45 b0 50 ff 15 08 15 80 7c
+0x7c812adb:   5e c9 c2 10 00 85 ff 0f 8e 36 93 ff ff 8b 55 fc 
+
+
+Stack: [0x03270000,0x032c0000),  sp=0x032bed68,  free space=315k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [kernel32.dll+0x12adb]
+C  [mmcshext.dll+0xab1c]
+C  [mmcshext.dll+0xac9a]
+C  [mmcshext.dll+0x9899]
+C  [mmcshext.dll+0x7dec]
+C  [SHELL32.dll+0x33bf3]
+C  [SHELL32.dll+0x365f3]
+C  [awt.dll+0x137c25]
+J  sun.awt.shell.Win32ShellFolder2.getIcon(Z)Ljava/awt/Image;
+j  javax.swing.filechooser.FileSystemView.getSystemIcon(Ljava/io/File;)Ljavax/swing/Icon;+12
+j  net.sf.bluex.components.BlueXStatics.getIcon(Ljava/io/File;)Ljavax/swing/Icon;+10
+j  net.sf.bluex.explorer.components.MyListRenderer.getListCellRendererComponent(Ljavax/swing/JList;Ljava/lang/Object;IZZ)Ljava/awt/Component;+57
+j  javax.swing.plaf.basic.BasicListUI.updateLayoutState()V+143
+j  javax.swing.plaf.basic.BasicListUI.maybeUpdateLayoutState()V+8
+j  javax.swing.plaf.basic.BasicListUI.getPreferredSize(Ljavax/swing/JComponent;)Ljava/awt/Dimension;+1
+J  javax.swing.JComponent.getPreferredSize()Ljava/awt/Dimension;
+j  javax.swing.ScrollPaneLayout.layoutContainer(Ljava/awt/Container;)V+428
+J  java.awt.Container.doLayout()V
+J  java.awt.Container.validateTree()V
+J  java.awt.Container.validate()V
+j  javax.swing.RepaintManager.validateInvalidComponents()V+58
+j  javax.swing.SystemEventQueueUtilities$ComponentWorkRequest.run()V+32
+J  java.awt.event.InvocationEvent.dispatch()V
+J  java.awt.EventQueue.dispatchEvent(Ljava/awt/AWTEvent;)V
+J  java.awt.EventDispatchThread.pumpOneEventForFilters(I)Z
+j  java.awt.EventDispatchThread.pumpEventsForFilter(ILjava/awt/Conditional;Ljava/awt/EventFilter;)V+30
+j  java.awt.EventDispatchThread.pumpEventsForHierarchy(ILjava/awt/Conditional;Ljava/awt/Component;)V+11
+j  java.awt.EventDispatchThread.pumpEvents(ILjava/awt/Conditional;)V+4
+j  java.awt.EventDispatchThread.pumpEvents(Ljava/awt/Conditional;)V+3
+j  java.awt.EventDispatchThread.run()V+9
+v  ~StubRoutines::call_stub
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J  sun.awt.shell.Win32ShellFolder2.getIconIndex(JJ)I
+J  sun.awt.shell.Win32ShellFolder2.getIcon(Z)Ljava/awt/Image;
+j  javax.swing.filechooser.FileSystemView.getSystemIcon(Ljava/io/File;)Ljavax/swing/Icon;+12
+j  net.sf.bluex.components.BlueXStatics.getIcon(Ljava/io/File;)Ljavax/swing/Icon;+10
+j  net.sf.bluex.explorer.components.MyListRenderer.getListCellRendererComponent(Ljavax/swing/JList;Ljava/lang/Object;IZZ)Ljava/awt/Component;+57
+j  javax.swing.plaf.basic.BasicListUI.updateLayoutState()V+143
+j  javax.swing.plaf.basic.BasicListUI.maybeUpdateLayoutState()V+8
+j  javax.swing.plaf.basic.BasicListUI.getPreferredSize(Ljavax/swing/JComponent;)Ljava/awt/Dimension;+1
+J  javax.swing.JComponent.getPreferredSize()Ljava/awt/Dimension;
+j  javax.swing.ScrollPaneLayout.layoutContainer(Ljava/awt/Container;)V+428
+J  java.awt.Container.doLayout()V
+J  java.awt.Container.validateTree()V
+J  java.awt.Container.validate()V
+j  javax.swing.RepaintManager.validateInvalidComponents()V+58
+j  javax.swing.SystemEventQueueUtilities$ComponentWorkRequest.run()V+32
+J  java.awt.event.InvocationEvent.dispatch()V
+J  java.awt.EventQueue.dispatchEvent(Ljava/awt/AWTEvent;)V
+J  java.awt.EventDispatchThread.pumpOneEventForFilters(I)Z
+j  java.awt.EventDispatchThread.pumpEventsForFilter(ILjava/awt/Conditional;Ljava/awt/EventFilter;)V+30
+j  java.awt.EventDispatchThread.pumpEventsForHierarchy(ILjava/awt/Conditional;Ljava/awt/Component;)V+11
+j  java.awt.EventDispatchThread.pumpEvents(ILjava/awt/Conditional;)V+4
+j  java.awt.EventDispatchThread.pumpEvents(Ljava/awt/Conditional;)V+3
+j  java.awt.EventDispatchThread.run()V+9
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x03066400 JavaThread "Explorer Thread" [_thread_in_native, id=1440]
+  0x031b4800 JavaThread "TimerQueue" daemon [_thread_blocked, id=1468]
+  0x002a6400 JavaThread "DestroyJavaVM" [_thread_blocked, id=3672]
+  0x031a3c00 JavaThread "Instance Monitor" [_thread_blocked, id=3596]
+  0x02b2c000 JavaThread "Thread Monitor" [_thread_blocked, id=3180]
+=>0x031a4800 JavaThread "AWT-EventQueue-0" [_thread_in_native, id=3348]
+  0x02af2800 JavaThread "AWT-Windows" daemon [_thread_in_native, id=1852]
+  0x02ac9400 JavaThread "AWT-Shutdown" [_thread_blocked, id=2656]
+  0x02ac8800 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=3468]
+  0x02a93800 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=1444]
+  0x02a90800 JavaThread "CompilerThread0" daemon [_thread_blocked, id=1960]
+  0x02a8d800 JavaThread "Attach Listener" daemon [_thread_blocked, id=3544]
+  0x02a8c800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=3428]
+  0x02a51c00 JavaThread "Finalizer" daemon [_thread_blocked, id=3160]
+  0x02a4d800 JavaThread "Reference Handler" daemon [_thread_blocked, id=2780]
+
+Other Threads:
+  0x02a44400 VMThread [id=3856]
+  0x02a9dc00 WatcherThread [id=3604]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 960K, used 644K [0x22960000, 0x22a60000, 0x22e40000)
+  eden space 896K,  64% used [0x22960000, 0x229f1390, 0x22a40000)
+  from space 64K, 100% used [0x22a40000, 0x22a50000, 0x22a50000)
+  to   space 64K,   0% used [0x22a50000, 0x22a50000, 0x22a60000)
+ tenured generation   total 4352K, used 4200K [0x22e40000, 0x23280000, 0x26960000)
+   the space 4352K,  96% used [0x22e40000, 0x2325a368, 0x2325a400, 0x23280000)
+ compacting perm gen  total 12288K, used 1625K [0x26960000, 0x27560000, 0x2a960000)
+   the space 12288K,  13% used [0x26960000, 0x26af65e8, 0x26af6600, 0x27560000)
+    ro space 8192K,  66% used [0x2a960000, 0x2aea9920, 0x2aea9a00, 0x2b160000)
+    rw space 12288K,  52% used [0x2b160000, 0x2b7a6130, 0x2b7a6200, 0x2bd60000)
+
+Dynamic libraries:
+0x00400000 - 0x00423000 	C:\Program Files\Java\jdk1.6.0\jre\bin\java.exe
+0x7c900000 - 0x7c9af000 	C:\WINDOWS\system32\ntdll.dll
+0x7c800000 - 0x7c8f5000 	C:\WINDOWS\system32\kernel32.dll
+0x77dd0000 - 0x77e6b000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x77e70000 - 0x77f02000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77fe0000 - 0x77ff1000 	C:\WINDOWS\system32\Secur32.dll
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jdk1.6.0\jre\bin\msvcr71.dll
+0x6d7c0000 - 0x6da07000 	C:\Program Files\Java\jdk1.6.0\jre\bin\client\jvm.dll
+0x7e410000 - 0x7e4a1000 	C:\WINDOWS\system32\USER32.dll
+0x77f10000 - 0x77f59000 	C:\WINDOWS\system32\GDI32.dll
+0x76b40000 - 0x76b6d000 	C:\WINDOWS\system32\WINMM.dll
+0x6d310000 - 0x6d318000 	C:\Program Files\Java\jdk1.6.0\jre\bin\hpi.dll
+0x76bf0000 - 0x76bfb000 	C:\WINDOWS\system32\PSAPI.DLL
+0x6d770000 - 0x6d77c000 	C:\Program Files\Java\jdk1.6.0\jre\bin\verify.dll
+0x6d3b0000 - 0x6d3cf000 	C:\Program Files\Java\jdk1.6.0\jre\bin\java.dll
+0x6d7b0000 - 0x6d7bf000 	C:\Program Files\Java\jdk1.6.0\jre\bin\zip.dll
+0x6d000000 - 0x6d1c3000 	C:\Program Files\Java\jdk1.6.0\jre\bin\awt.dll
+0x73000000 - 0x73026000 	C:\WINDOWS\system32\WINSPOOL.DRV
+0x77c10000 - 0x77c68000 	C:\WINDOWS\system32\msvcrt.dll
+0x76390000 - 0x763ad000 	C:\WINDOWS\system32\IMM32.dll
+0x774e0000 - 0x7761d000 	C:\WINDOWS\system32\ole32.dll
+0x5ad70000 - 0x5ada8000 	C:\WINDOWS\system32\uxtheme.dll
+0x73760000 - 0x737ab000 	C:\WINDOWS\system32\ddraw.dll
+0x73bc0000 - 0x73bc6000 	C:\WINDOWS\system32\DCIMAN32.dll
+0x10000000 - 0x10170000 	C:\WINDOWS\system32\nview.dll
+0x77f60000 - 0x77fd6000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x7c9c0000 - 0x7d1d7000 	C:\WINDOWS\system32\SHELL32.dll
+0x77120000 - 0x771ab000 	C:\WINDOWS\system32\OLEAUT32.dll
+0x5d090000 - 0x5d12a000 	C:\WINDOWS\system32\COMCTL32.dll
+0x77c00000 - 0x77c08000 	C:\WINDOWS\system32\VERSION.dll
+0x773d0000 - 0x774d3000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.2600.3244_x-ww_d74fff41\comctl32.dll
+0x77690000 - 0x776b1000 	C:\WINDOWS\system32\NTMARTA.DLL
+0x71bf0000 - 0x71c03000 	C:\WINDOWS\system32\SAMLIB.dll
+0x76f60000 - 0x76f8c000 	C:\WINDOWS\system32\WLDAP32.dll
+0x6d2b0000 - 0x6d303000 	C:\Program Files\Java\jdk1.6.0\jre\bin\fontmanager.dll
+0x6d570000 - 0x6d583000 	C:\Program Files\Java\jdk1.6.0\jre\bin\net.dll
+0x71ab0000 - 0x71ac7000 	C:\WINDOWS\system32\WS2_32.dll
+0x71aa0000 - 0x71aa8000 	C:\WINDOWS\system32\WS2HELP.dll
+0x6d590000 - 0x6d599000 	C:\Program Files\Java\jdk1.6.0\jre\bin\nio.dll
+0x5b860000 - 0x5b8b5000 	C:\WINDOWS\system32\netapi32.dll
+0x71b20000 - 0x71b32000 	C:\WINDOWS\system32\MPR.dll
+0x75f60000 - 0x75f67000 	C:\WINDOWS\System32\drprov.dll
+0x71c10000 - 0x71c1e000 	C:\WINDOWS\System32\ntlanman.dll
+0x71cd0000 - 0x71ce7000 	C:\WINDOWS\System32\NETUI0.dll
+0x71c90000 - 0x71cd0000 	C:\WINDOWS\System32\NETUI1.dll
+0x71c80000 - 0x71c87000 	C:\WINDOWS\System32\NETRAP.dll
+0x75f70000 - 0x75f7a000 	C:\WINDOWS\System32\davclnt.dll
+0x77920000 - 0x77a13000 	C:\WINDOWS\system32\SETUPAPI.dll
+0x77b40000 - 0x77b62000 	C:\WINDOWS\system32\appHelp.dll
+0x035c0000 - 0x0365a000 	C:\Program Files\Nokia\Nokia PC Suite 7\PhoneBrowser.dll
+0x03740000 - 0x03823000 	C:\Program Files\Nokia\Nokia PC Suite 7\NGSCM.DLL
+0x76380000 - 0x76385000 	C:\WINDOWS\system32\MSIMG32.dll
+0x5edd0000 - 0x5ede7000 	C:\WINDOWS\system32\OLEPRO32.DLL
+0x763b0000 - 0x763f9000 	C:\WINDOWS\system32\comdlg32.dll
+0x4ec50000 - 0x4edf6000 	C:\WINDOWS\WinSxS\x86_Microsoft.Windows.GdiPlus_6595b64144ccf1df_1.0.2600.3244_x-ww_81307eca\gdiplus.dll
+0x7c420000 - 0x7c4a7000 	C:\WINDOWS\WinSxS\x86_Microsoft.VC80.CRT_1fc8b3b9a1e18e3b_8.0.50727.762_x-ww_6b128700\MSVCP80.dll
+0x78130000 - 0x781cb000 	C:\WINDOWS\WinSxS\x86_Microsoft.VC80.CRT_1fc8b3b9a1e18e3b_8.0.50727.762_x-ww_6b128700\MSVCR80.dll
+0x63000000 - 0x630e6000 	C:\WINDOWS\system32\WININET.dll
+0x03680000 - 0x03689000 	C:\WINDOWS\system32\Normaliz.dll
+0x1a400000 - 0x1a532000 	C:\WINDOWS\system32\urlmon.dll
+0x5dca0000 - 0x5de88000 	C:\WINDOWS\system32\iertutil.dll
+0x03700000 - 0x03709000 	C:\Program Files\Nokia\Nokia PC Suite 7\Lang\PhoneBrowser_eng-us.nlr
+0x03a80000 - 0x03b0e000 	C:\Program Files\Nokia\Nokia PC Suite 7\Resource\PhoneBrowser_Nokia.ngr
+0x769c0000 - 0x76a74000 	C:\WINDOWS\system32\USERENV.dll
+0x76fd0000 - 0x7704f000 	C:\WINDOWS\system32\CLBCATQ.DLL
+0x77050000 - 0x77115000 	C:\WINDOWS\system32\COMRes.dll
+0x75970000 - 0x75a68000 	C:\WINDOWS\system32\MSGINA.dll
+0x74320000 - 0x7435d000 	C:\WINDOWS\system32\ODBC32.dll
+0x76360000 - 0x76370000 	C:\WINDOWS\system32\WINSTA.dll
+0x03c70000 - 0x03c87000 	C:\WINDOWS\system32\odbcint.dll
+0x76c30000 - 0x76c5e000 	C:\WINDOWS\system32\WINTRUST.dll
+0x77a80000 - 0x77b15000 	C:\WINDOWS\system32\CRYPT32.dll
+0x77b20000 - 0x77b32000 	C:\WINDOWS\system32\MSASN1.dll
+0x76c90000 - 0x76cb8000 	C:\WINDOWS\system32\IMAGEHLP.dll
+0x03d10000 - 0x03d25000 	C:\WINDOWS\system32\nvwddi.dll
+0x71a50000 - 0x71a8f000 	C:\WINDOWS\system32\mswsock.dll
+0x47280000 - 0x47292000 	C:\WINDOWS\System32\mmcshext.dll
+0x76080000 - 0x760e5000 	C:\WINDOWS\System32\msvcp60.dll
+0x723b0000 - 0x723be000 	C:\WINDOWS\System32\hhsetup.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8
+java_command: net.sf.bluex.InitializeSoftware
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files\PC Connectivity Solution\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem
+USERNAME=Blue
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 15 Model 72 Stepping 2, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows XP Build 2600 Service Pack 3, v.3244
+
+CPU:total 2 family 15, cmov, cx8, fxsr, mmx, sse, sse2, mmxext, 3dnowext, 3dnow, ht
+
+Memory: 4k page, physical 2097151k(1591272k free), swap 3017256k(2270856k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.6.0-b105) for windows-x86, built on Nov 29 2006 00:48:48 by "java_re" with unknown MS VC++:1310
+

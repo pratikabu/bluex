@@ -1,0 +1,1 @@
+co.com|autorun.inf|regsvr.exe|sxs.exe|nar.vbs|sys.vbs|system.exe|DriveGuard.exe|.vbs|NewVirusRemoval.vbs|New Folder .exe|System .exe|Security .exe|MicrosoftPowerPoint.exe|boot.exe|Data STUDENT.exe|SSVICHOSST.exe|Sys.exe|VirusRemoval.vbs|DriveProtect.exe|
